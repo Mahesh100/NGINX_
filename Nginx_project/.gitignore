@@ -1,7 +1,4 @@
 node_modules/
+Files/
 .idea/
 .env
-.idea/misc.xml
-.idea/modules.xml
-.idea/NGINX_.iml
-.idea/vcs.xml
