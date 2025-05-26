@@ -1,0 +1,16 @@
+
+
+# Start using Nginx as proxy to load balance the request to 3 different nginx webservers
+
+In nginx.config file we have defined below code :
+
+1) worker_processes 1;
+  -These are basically called "Directives" , all key value configurations are called directives and here
+   worker_processes is key and 1 is value.
+  -
+- More worker process we have in config file more is the request load nginx can handle.
+- In production environment it is recommended to use worker_processes value to be equal to number of CPU cores that is
+  available on server where nginx is running.
+- We can also define worker_process auto ; value as "auto"
+  auto= "Nginx will automatically detect the number of CPU cores available on server and starts the number of corresponding
+  number of worker nodes.
